@@ -1,6 +1,6 @@
 {
 	"name": "advanced-css-reset",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "Simple and Clean CSS Reset for modern day web development",
 	"license": "MIT",
 	"repository": "https://github.com/abhijithvijayan/advanced-css-reset.git",
@@ -9,13 +9,14 @@
 		"email": "34790378+abhijithvijayan@users.noreply.github.com",
 		"url": "https://abhijithvijayan.in"
 	},
-	"main": "./src/reset.css",
+	"main": "./dist/reset.min.css",
 	"files": [
 		"/dist"
 	],
 	"scripts": {
 		"build": "uglifycss src/reset.css > dist/reset.min.css",
-		"copy": "cp src/reset.css dist/reset.css"
+		"copy": "cp src/reset.css dist/reset.css",
+		"release": "yarn build && yarn copy && npm publish"
 	},
 	"keywords": [
 		"advanced css reset",
