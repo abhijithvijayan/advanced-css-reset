@@ -41,6 +41,12 @@ jsDelivr CDN:
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/advanced-css-reset/dist/reset.min.css" />
 ```
 
+With SASS:
+
+```scss
+@import '~advanced-css-reset/dist/reset.css';
+```
+
 ### Manual installation
 
 First, let's clone this repository:
