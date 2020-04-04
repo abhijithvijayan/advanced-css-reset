@@ -40,10 +40,10 @@ ol {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
+}
 
-  &:hover {
-    text-decoration: none;
-  }
+a:hover {
+  text-decoration: none;
 }
 
 /* Responsive images */
