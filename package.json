@@ -14,11 +14,14 @@
 		"/dist/"
 	],
 	"scripts": {
-		"build": ""
+		"build": "uglifycss src/reset.css > dist/reset.min.css"
 	},
 	"keywords": [
 		"advanced css reset",
 		"css reset",
 		"css"
-	]
+	],
+	"devDependencies": {
+		"uglifycss": "^0.0.29"
+	}
 }
