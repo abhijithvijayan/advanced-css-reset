@@ -9,7 +9,7 @@
 		"email": "34790378+abhijithvijayan@users.noreply.github.com",
 		"url": "https://abhijithvijayan.in"
 	},
-	"main": "./dist/reset.min.css",
+	"main": "./src/reset.css",
 	"files": [
 		"/dist/"
 	],
