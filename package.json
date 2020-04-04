@@ -1,0 +1,24 @@
+{
+	"name": "advanced-css-reset",
+	"version": "1.0.0",
+	"description": "Simple and Clean CSS Reset for modern day web development",
+	"license": "MIT",
+	"repository": "https://github.com/abhijithvijayan/advanced-css-reset.git",
+	"author": {
+		"name": "abhijithvijayan",
+		"email": "34790378+abhijithvijayan@users.noreply.github.com",
+		"url": "https://abhijithvijayan.in"
+	},
+	"main": "./dist/reset.min.css",
+	"files": [
+		"/dist/"
+	],
+	"scripts": {
+		"build": ""
+	},
+	"keywords": [
+		"advanced css reset",
+		"css reset",
+		"css"
+	]
+}
