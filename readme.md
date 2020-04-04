@@ -58,7 +58,7 @@ cd advanced-css-reset
 And now, you can minify and move the main reset to the `dist` by running:
 
 ```console
-npm run build
+yarn run build
 ```
 
 That's it! 🎉

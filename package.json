@@ -11,10 +11,11 @@
 	},
 	"main": "./src/reset.css",
 	"files": [
-		"/dist/"
+		"/dist"
 	],
 	"scripts": {
-		"build": "uglifycss src/reset.css > dist/reset.min.css"
+		"build": "uglifycss src/reset.css > dist/reset.min.css",
+		"copy": "cp src/reset.css dist/reset.css"
 	},
 	"keywords": [
 		"advanced css reset",
