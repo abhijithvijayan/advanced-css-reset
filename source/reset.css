@@ -39,7 +39,12 @@ ol {
 	list-style: none;
 }
 
-/* A elements that don't have a class get default styles */
+/* If no link is supplied or href field is missing */
+a:is(:not([href]), [href=""], [href="#"]) {
+	outline: 2px dotted red;
+}
+
+/* Anchor elements that don't have a class get default styles */
 a:not([class]) {
 	text-decoration-skip-ink: auto;
 }
