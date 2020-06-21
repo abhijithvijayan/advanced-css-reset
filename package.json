@@ -6,7 +6,7 @@
 	"repository": "https://github.com/abhijithvijayan/advanced-css-reset.git",
 	"author": {
 		"name": "abhijithvijayan",
-		"email": "34790378+abhijithvijayan@users.noreply.github.com",
+		"email": "email@abhijithvijayan.in",
 		"url": "https://abhijithvijayan.in"
 	},
 	"main": "./dist/reset.min.css",
@@ -14,8 +14,8 @@
 		"/dist"
 	],
 	"scripts": {
-		"build": "uglifycss src/reset.css > dist/reset.min.css",
-		"copy": "cp src/reset.css dist/reset.css",
+		"build": "uglifycss source/reset.css > dist/reset.min.css",
+		"copy": "cp source/reset.css dist/reset.css",
 		"release": "yarn build && yarn copy && npm publish"
 	},
 	"keywords": [
