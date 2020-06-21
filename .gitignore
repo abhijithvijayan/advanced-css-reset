@@ -101,3 +101,5 @@ typings/
 tmp/
 temp/
 
+# build folder
+dist/reset.css
