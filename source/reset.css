@@ -39,11 +39,6 @@ ol {
 	list-style: none;
 }
 
-/* If no link is supplied or href field is missing */
-a:is(:not([href]), [href=""], [href="#"]) {
-	outline: 2px dotted red;
-}
-
 /* Anchor elements that don't have a class get default styles */
 a:not([class]) {
 	text-decoration-skip-ink: auto;
@@ -102,7 +97,21 @@ p {
 	margin: 0px 0px 15px;
 }
 
-/* Hack: Blur images when they have no alt attribute */
+/* --------------- */
+/* lintHTMLwithCSS */
+/* --------------- */
+
+/* If no link is supplied or href field is missing */
+a:is(:not([href]), [href=""], [href="#"]) {
+	outline: 2px dotted red;
+}
+
+/* only <li>'s allowed in ul & ol */
+:is(ul, ol)>*:not(li) {
+	outline: 2px dotted red;
+}
+
+/* Blur images when they have no alt attribute */
 img:not([alt]) {
 	filter: blur(10px);
 }
