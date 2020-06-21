@@ -111,8 +111,10 @@ a:is(:not([href]), [href=""], [href="#"]) {
 	outline: 2px dotted red;
 }
 
-/* Blur images when they have no alt attribute */
-img:not([alt]) {
+/* Blur images when they have no alt, width, height attribute */
+img:not([alt]),
+img:not([width]),
+img:not([height]) {
 	filter: blur(10px);
 }
 
