@@ -16,7 +16,7 @@
 	"scripts": {
 		"build": "uglifycss source/reset.css > dist/reset.min.css",
 		"copy": "cp source/reset.css dist/reset.css",
-		"release": "yarn build && yarn copy && npm publish"
+		"prepublishOnly": "yarn build && yarn copy"
 	},
 	"keywords": [
 		"advanced css reset",
