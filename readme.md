@@ -1,7 +1,7 @@
 <h1 align="center">advanced-css-reset</h1>
 <p align="center">Simple and Clean CSS Reset for modern day web development</p>
 <div align="center">
-  <a href="https://www.npmjs.com/package/abhijithvijayan">
+  <a href="https://www.npmjs.com/package/advanced-css-reset">
     <img src="https://img.shields.io/npm/v/abhijithvijayan" alt="NPM" />
   </a>
   <a href="https://travis-ci.com/abhijithvijayan/advanced-css-reset">
