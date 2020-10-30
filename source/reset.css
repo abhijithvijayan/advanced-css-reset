@@ -88,7 +88,8 @@ h2,
 h3,
 h4,
 h5 {
-	font-weight: 600;
+	font-size: inherit;
+	font-weight: inherit;
 	margin: 0px 0px 10px;
 }
 
