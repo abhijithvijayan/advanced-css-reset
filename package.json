@@ -9,6 +9,9 @@
 		"email": "email@abhijithvijayan.in",
 		"url": "https://abhijithvijayan.in"
 	},
+	"engines": {
+		"node": ">=10.0.0"
+	},
 	"main": "./dist/reset.min.css",
 	"files": [
 		"/dist"
@@ -16,7 +19,7 @@
 	"scripts": {
 		"build": "uglifycss source/reset.css > dist/reset.min.css",
 		"copy": "cp source/reset.css dist/reset.css",
-		"prepublishOnly": "yarn build && yarn copy"
+		"prepublishOnly": "npm run build && npm run copy"
 	},
 	"keywords": [
 		"advanced css reset",
