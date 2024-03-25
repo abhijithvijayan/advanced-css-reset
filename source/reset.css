@@ -137,9 +137,29 @@ html {
 
 /* Set core body defaults */
 body {
-	min-height: 100vh;
 	text-rendering: optimizeSpeed;
 	line-height: 1.3;
 	overflow-x: hidden;
-	width: 100%;
+
+	/* Safari fucked up in 2015 changing how vh unit works.
+	/* so whenever you focus on an input, the whole screen(Virtual Layout) is made to shrink
+	/* rather than having the height as constant and introducing a scroll
+	/* Then chrome joined the party with similar idiocy for mobiles. At-least they cared to have it backward compatible
+	/* CSS team then decided to end the fuck up by introducing new units like svh, lvh, svw, lvw, etc...
+	/* and that's exactly what is going to save us from the safari hell.
+	/*
+	/* References:
+	/* 1. https://viewport-resize-behavior.netlify.app/
+	/* 2. https://developer.chrome.com/blog/viewport-resize-behavior/
+	/* 3. https://caniuse.com/?search=svh
+	/* 4. http://output.jsbin.com/AbimiQup/4
+	*/
+
+	/* have these for backward compatibility */
+	min-height: 100vh;
+	width: 100vw;
+
+	/* introduce the trojan horses */
+	/* and fuck you safari and fuck you chrome */
+	height: 100svh;
 }
