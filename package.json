@@ -17,9 +17,8 @@
 		"/dist"
 	],
 	"scripts": {
-		"build": "uglifycss source/reset.css > dist/reset.min.css",
-		"copy": "cp source/reset.css dist/reset.css",
-		"prepublishOnly": "npm run build && npm run copy"
+		"build": "sass --style=compressed source/reset.css dist/reset.min.css",
+		"prepublishOnly": "npm run build"
 	},
 	"keywords": [
 		"advanced css reset",
@@ -27,6 +26,6 @@
 		"css"
 	],
 	"devDependencies": {
-		"uglifycss": "^0.0.29"
+		"sass": "^1.72.0"
 	}
 }

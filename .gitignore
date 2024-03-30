@@ -98,4 +98,4 @@ node_modules
 yarn.lock
 
 # build folder
-dist/reset.css
+dist
