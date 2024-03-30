@@ -69,7 +69,7 @@ jsDelivr CDN:
 With SASS:
 
 ```scss
-@import '~advanced-css-reset/dist/reset.css';
+@import '~advanced-css-reset/dist/reset.min.css';
 ```
 
 ### Manual installation
