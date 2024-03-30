@@ -195,3 +195,9 @@ body {
 		scroll-behavior: smooth;
 	}
 }
+
+/* opt the entire page into the user's color scheme preferences */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme */
+:root {
+	color-scheme: light dark;
+}
