@@ -50,8 +50,23 @@ a:hover {
 
 /* Responsive images */
 img {
+	/* prevent image from overflowing */
 	max-width: 100%;
+	/* images are meant to be on the baseline of normal texts and not texts that are like J which goes below the baseline */
+	/* prevent that and align it */
 	display: block;
+	/* width="" height="" will be telling browser what the aspect ratio of the image is */
+	/* enforce the aspect ratio of the image */
+	height: auto;
+	/* makes the alt text in italic to differentiate between other content */
+	font-style: italic;
+	/* for lazy loading, we can give background-image with low resolution image(provided width and height is provided) */
+	/* and once browser loads the actual large image, it will replace the low quality image */
+	/* https://csswizardry.com/2023/09/the-ultimate-lqip-lcp-technique */
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* in rare cases images are floated to left side and text is meant to wrap around, this will make it look nicer */
+	shape-margin: 1rem;
 }
 
 /* Improve article readability */
@@ -114,11 +129,11 @@ a:is(:not([href]), [href=""], [href="#"]) {
 }
 
 /* Blur images when they have no alt, width, height attribute */
-img:not([alt]),
-img:not([width]),
-img:not([height]) {
-	filter: blur(10px);
-}
+/*img:not([alt]),*/
+/*img:not([width]),*/
+/*img:not([height]) {*/
+/*	filter: blur(10px);*/
+/*}*/
 
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
