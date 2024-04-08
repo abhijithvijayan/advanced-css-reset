@@ -214,3 +214,11 @@ table {
 	/* gets rid of the spacing from the edge of the box, default is 2px */
 	border-spacing: 0;
 }
+
+dialog {
+	/* remove the unnecessary spacing around the content of the dialog */
+	box-sizing: border-box;
+	/* reset the calculated value by browser agent styles */
+	max-width: unset;
+	max-height: unset;
+}
