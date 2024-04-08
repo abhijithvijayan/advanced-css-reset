@@ -207,3 +207,10 @@ body {
 :root {
 	color-scheme: light dark;
 }
+
+table {
+	/* gets rid of the spacing between rows/columns */
+	border-collapse: collapse;
+	/* gets rid of the spacing from the edge of the box, default is 2px */
+	border-spacing: 0;
+}
